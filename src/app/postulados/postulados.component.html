@@ -1,0 +1,43 @@
+<!-- postulados.component.html -->
+
+<section class="postulados-container">
+    <div class="container">
+      <h1 class="text-center mb-5 tracking-in-contract">Explora Oportunidades</h1>
+  
+      <!-- Buscador y Filtros -->
+      <form class="postulados-filters mb-4">
+        <div class="input-group">
+          <input [(ngModel)]="searchTerm" name="searchTerm" type="text" class="form-control" placeholder="Buscar...">
+          <div class="input-group-append">
+            <button class="btn btn-primary" type="submit">Buscar</button>
+          </div>
+        </div>
+  
+        <div class="filters ml-auto">
+          <label for="category" class="mr-2">Categoría:</label>
+          <select id="category" name="category" class="form-control" [(ngModel)]="selectedCategory">
+            <option value="">Todas</option>
+            <option value="desarrollo">Desarrollo</option>
+            <option value="diseno">Diseño</option>
+            <option value="bd">Base de datos</option>
+            <option value="bd">Testing</option>
+            <!-- Agrega más opciones según sea necesario -->
+          </select>
+        </div>
+      </form>
+  
+      <div class="postulados-list row">
+        <div *ngFor="let job of filteredJobs()" class="col-md-6 mb-4">
+          <div class="postulados-item p-4">
+            <div class="d-flex align-items-center mb-3">
+              <img class="company-logo" [src]="job.companyLogo" alt="Logo de {{ job.companyName }}">
+              <h2 class="ml-3">{{ job.title }}</h2>
+            </div>
+            <p>{{ job.description }}</p>
+            <p class="text-muted">{{ job.companyName }}</p>
+            <button class="btn btn-primary animate__animated animate__fadeInUp">Postular</button>
+          </div>
+        </div>        
+      </div>
+    </div>
+  </section>

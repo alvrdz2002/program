@@ -1,0 +1,208 @@
+
+* {
+    font-family: 'Sora', sans-serif;
+}
+
+body {
+    background-color: #fcfcfc;
+}
+
+section .imagen-section img {
+    max-width: 100%;
+    width: 1000px;
+    height: auto;
+}
+
+.hero h1 {
+    font-size: 48px;
+    font-weight: 700;
+}
+
+.row {
+    margin-right: 0px !important;
+    margin-left: 0px !important;
+}
+
+.c-item {
+    height: 500px;
+}
+
+.c-img {
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(0.6);
+}
+
+.postulate {
+    background-image: url('../../assets/img/slid4.jpg');
+    background-size: cover;
+    background-position: center center;
+    min-height: 400px;
+    object-fit: cover;
+    filter: brightness(0.8);
+}
+
+.postulate h4 {
+    color: #fff;
+}
+
+#apartado {
+    padding-bottom: 4rem;
+}
+
+#apartado button {
+    background-color: #0c64ad;
+    border: 1px solid #0c64ad;
+    border-radius: 28px;
+    padding: 16.4px 25.31px 16.98px;
+    font-size: 12px;
+    line-height: 1;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #fff;
+}
+
+#apartado-color {
+    padding-top: 1rem;
+    padding-bottom: 5rem;
+    background-color: #fcfcfc;
+}
+
+
+header {
+    position: fixed;
+    width: 100%;
+    background-color: #fff;
+    box-shadow: 0 20px 40px 0 rgba(0,0,0,.07);
+    z-index: 9999;
+}
+
+header li a {
+    font-size: 14px;
+    line-height: 40px;
+    font-weight: 600;
+}
+
+header form {
+    font-size: 14px;
+    line-height: 40px;
+    font-weight: 600;
+}
+
+header #login {
+    outline: none;
+    background: transparent;
+    color: #000;
+}
+
+
+.container-fluid2 {
+    width: 100%;
+    max-width: 1900px;
+    padding-left: 60px;
+    padding-right: 60px;
+}
+
+.botones-banner .boton a {
+    background-color: #0c64ad;
+    border: 1px solid #0c64ad;
+    border-radius: 28px;
+    padding: 16.4px 25.31px 16.98px;
+    font-size: 14px;
+    line-height: 1;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #fff;
+}
+
+form .flex-form span {
+    font-size: 12px;
+}
+
+form .flex-form button {
+    background-color: #0c64ad;
+    border: 1px solid #0c64ad;
+    border-radius: 28px;
+    padding: 16.4px 25.31px 16.98px;
+    font-size: 12px;
+    line-height: 1;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #fff;
+}
+
+.container {
+    max-width: 1320px;
+}
+
+.boton-pag {
+    background-color: #0c64ad;
+    border: 1px solid #0c64ad;
+    border-radius: 28px;
+    padding: 16.4px 25.31px 16.98px;
+    font-size: 12px;
+    line-height: 1;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #fff;
+}
+
+.ver-mas {
+    display: none;
+  }
+  
+  .ver-mas-boton {
+    background-color: #0c64ad;
+    border: 1px solid #0c64ad;
+    border-radius: 4px;
+    padding: 8px;
+    font-size: 12px;
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  .usuario-resp{
+    padding-top: 25px;
+  }#apartado-color {
+    padding-top: 3rem; /* Aumenté el espacio en la parte superior */
+    padding-bottom: 5rem;
+    background-color: #fcfcfc;
+}
+
+.usuario {
+    border-bottom: 1px solid #ccc; /* Línea separadora entre preguntas */
+    padding-bottom: 20px; /* Espaciado inferior */
+    margin-bottom: 20px; /* Espaciado inferior */
+}
+
+.usuario h5 {
+    margin-bottom: 10px; /* Espaciado inferior */
+}
+
+.ver-mas {
+    display: none;
+}
+
+.ver-mas-boton {
+    background-color: #0c64ad;
+    border: 1px solid #0c64ad;
+    border-radius: 4px;
+    padding: 8px;
+    font-size: 12px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.usuario-resp {
+    padding-top: 15px; /* Reduje el espacio superior */
+    color: #555; /* Cambié el color del texto de la respuesta */
+}
+
+.categoria{
+    cursor: pointer;
+    transition: transform 0.6s ease-in-out;
+}
+
+.categoria:hover{
+    transform: scale(1.2);
+}

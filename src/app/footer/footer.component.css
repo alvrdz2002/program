@@ -1,0 +1,77 @@
+.divider {
+  height: 2px;
+  background-color: #53687e;
+}
+
+.logo img {
+  width: 155px;
+  height: auto;
+  transition: transform 0.3s ease-in-out;
+}
+
+.logo-link:hover img {
+  transform: scale(1.1); /* Efecto de escala al pasar el ratón */
+}
+
+.footer {
+  background-color: #f8f9fa;
+  color: #333;
+  padding: 20px 0;
+  border-top: 1px solid #007BFF;
+}
+
+.footer-contact img {
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.footer-contact a:hover img {
+  transform: scale(1.2);
+}
+
+.social-icon {
+  text-decoration: none;
+  color: #333;
+}
+
+.social-icon:hover {
+  text-decoration: none;
+  color: #007BFF;
+}
+
+.footer-contact p {
+  margin: 5px 0;
+}
+
+.footer-links a {
+  color: #333;
+  text-decoration: none;
+  margin-right: 20px;
+  transition: color 0.3s ease-in-out;
+}
+
+.footer-links a:hover {
+  color: #007BFF;
+  text-decoration: underline;
+}
+
+.copyright {
+  text-align: center;
+  margin-top: 15px;
+  font-size: 14px;
+  color: #555;
+}
+
+.whatsapp-container {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.container {
+  max-width: 960px;
+  margin-left: auto;
+  margin-right: auto;
+}

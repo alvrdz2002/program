@@ -1,0 +1,329 @@
+.conocenos-container {
+    position: relative;
+    overflow: auto;
+    min-height: 100vh;
+    /* Permite el desplazamiento cuando el contenido excede el área visible */
+}
+
+.video-background {
+    object-fit: cover;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    /* Asegura que el video esté detrás del contenido */
+}
+
+.conocenos-content {
+    text-align: center;
+    position: relative;
+    z-index: 1;
+    color: white;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    margin: auto;
+    margin-top: 400px;
+    max-width: 600px;
+}
+
+
+h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+p {
+    font-size: 18px;
+    margin: 0 0 20px;
+    font-family: 'Inter', sans-serif;
+    line-height: 1.6;
+}
+
+/* Estilos adicionales para hacer que el contenido sea más legible en fondos oscuros */
+.conocenos-content a {
+    color: #eaeaea;
+    text-decoration: underline;
+}
+
+.conocenos-content a:hover {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.conocenos-content a:active {
+    color: #cccccc;
+    text-decoration: none;
+}
+
+.fade-in {
+    opacity: 0;
+    animation: fadeIn 1s ease-in forwards;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+/* Los estilos previos siguen siendo aplicables */
+
+.conocenos-extra {
+    padding: 80px 0;
+    background-color: #f9f9f9;
+}
+
+.conocenos-extra h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.conocenos-extra p {
+    font-size: 18px;
+    margin: 0 0 20px;
+    font-family: 'Inter', sans-serif;
+}
+
+/* Estilos para las imágenes */
+.conocenos-extra img {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+
+/* Estilo para la superposición de degradado en el video */
+.video-overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(106, 104, 104, 0.3) 100%);
+    pointer-events: none;
+    /* Evita que la superposición bloquee la interacción con el contenido debajo */
+}
+
+
+.scrollable-content {
+    overflow: auto;
+    /* Configura otros estilos */
+}
+
+/* @keyframes show {
+    from {
+        opacity: 0;
+        scale: 25%;
+    }
+
+    to {
+        opacity: 1;
+        scale: 100%;
+    }
+}
+
+.ima {
+    view-timeline: --image;
+    view-timeline-axis: block;
+
+    animation-timeline: --image;
+    animation-name: show;
+
+    animation-range: entry 25% cover 50%;
+    animation-fill-mode: both;
+}*/
+
+.ima {
+    transition: transform 0.3s ease;
+}
+
+/* Aplica una transformación de escala en las imágenes cuando se hace hover o se activan */
+.ima:hover,
+.ima:active {
+    transform: scale(1.1);
+}
+
+/* Estilos adicionales para las imágenes */
+.conocenos-extra img {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos para la sección de Ventajas */
+.ventajas {
+    background: linear-gradient(to bottom, #007BFF, #003c80);
+    padding: 80px 0;
+    text-align: center;
+    color: #fff;
+}
+
+.ventajas h2 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.ventajas p {
+    font-size: 18px;
+    margin: 0 0 20px;
+}
+
+/* Contenedor flex para las ventajas */
+.ventajas .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Contenedor de texto */
+.ventajas-text {
+    flex: 1;
+    text-align: left;
+    padding: 20px;
+}
+
+/* Estilos para los íconos */
+.ventajas .ventaja-item {
+    flex: 1;
+    margin: 10px;
+    padding: 20px;
+    border: 2px solid #ffca28;
+    border-radius: 10px;
+    background: linear-gradient(to bottom, #ffea80, #ffca28);
+    transition: transform 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+/* Cambiar el color del borde al hacer hover */
+.ventajas .ventaja-item:hover {
+    border-color: #ffea80;
+}
+
+/* Estilos para los íconos */
+.ventajas .ventaja-item i {
+    font-size: 60px;
+    color: #fff;
+    margin-bottom: 20px;
+    background-color: #ffca28;
+    border-radius: 50%;
+    padding: 20px;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+}
+
+/* Cambiar el color del ícono al hacer hover */
+.ventajas .ventaja-item:hover i {
+    background-color: #ffea80;
+}
+
+/* Estilos para los títulos de las ventajas */
+.ventajas .ventaja-item h3 {
+    font-size: 28px;
+    margin: 10px 0;
+}
+
+/* Estilos para los textos de las ventajas */
+.ventajas .ventaja-item p {
+    font-size: 16px;
+    margin: 0;
+}
+
+/* Estilos para el zoom al hacer hover */
+.ventajas .ventaja-item:hover {
+    transform: scale(1.05);
+}
+
+/*---------------------------*/
+* {
+    font-family: 'Sora', sans-serif;
+}
+
+body {
+    background-color: #fcfcfc;
+}
+
+section .imagen-section img {
+    max-width: 100%;
+    width: 1000px;
+    height: auto;
+}
+
+.hero h1 {
+    font-size: 48px;
+    font-weight: 700;
+}
+
+.row {
+    margin-right: 0px !important;
+    margin-left: 0px !important;
+}
+
+.c-item {
+    height: 500px;
+}
+
+.c-img {
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(0.6);
+}
+
+.postulate h4 {
+    color: #fff;
+}
+
+#apartado {
+    padding-bottom: 4rem;
+}
+
+
+header li a {
+    font-size: 14px;
+    line-height: 40px;
+    font-weight: 600;
+}
+
+header form {
+    font-size: 14px;
+    line-height: 40px;
+    font-weight: 600;
+}
+
+.container-fluid2 {
+    width: 100%;
+    max-width: 1900px;
+    padding-left: 60px;
+    padding-right: 60px;
+}
+
+.botones-banner .boton button{
+    background-color: rgb(241, 241, 241);
+    border: 1px solid #f6f6f7;
+    border-radius: 28px;
+    padding: 16.4px 25.31px 16.98px;
+    font-size: 14px;
+    line-height: 1;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #151517;
+    cursor: pointer;
+}
+
+form .flex-form span {
+    font-size: 12px;
+}
+
+.container {
+    max-width: 1320px;
+}
+

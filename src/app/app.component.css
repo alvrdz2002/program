@@ -1,0 +1,99 @@
+header {
+    position: fixed;
+    width: 100%;
+    background-color: #fff;
+    box-shadow: 0 20px 40px 0 rgba(0,0,0,.07);
+    z-index: 9999;
+}
+
+header li a {
+    font-size: 15px;
+    line-height: 40px;
+    font-weight: 600;
+}
+
+header form {
+    font-size: 14px;
+    line-height: 40px;
+    font-weight: 600;
+}
+
+.post button:hover{
+    margin: 15px;
+
+}
+
+header #login {
+    outline: none;
+    background: transparent;
+    color: #000;
+}
+
+
+.container-fluid2 {
+    width: 100%;
+    max-width: 1900px;
+    padding-left: 60px;
+    padding-right: 60px;
+}
+
+.botones-banner .boton a {
+    background-color: #0c64ad;
+    border: 1px solid #0c64ad;
+    border-radius: 28px;
+    padding: 16.4px 25.31px 16.98px;
+    font-size: 14px;
+    line-height: 1;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #fff;
+}
+
+form .flex-form span {
+    font-size: 12px;
+}
+
+form .flex-form button {
+    background-color: #0c64ad;
+    border: 1px solid #0c64ad;
+    border-radius: 28px;
+    padding: 16.4px 25.31px 16.98px;
+    font-size: 12px;
+    line-height: 1;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #fff;
+}
+
+.container {
+    max-width: 1320px;
+}
+
+.boton-pag {
+    background-color: #0c64ad;
+    border: 1px solid #0c64ad;
+    border-radius: 28px;
+    padding: 16.4px 25.31px 16.98px;
+    font-size: 14px;
+    line-height: 1;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #fff;
+}
+
+
+.logo{
+    max-width: 50px;
+    max-height: 50px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.logo:hover{
+    transform: scale(1.2);
+}
+
+header #login {
+    outline: none;
+    background: transparent;
+    color: #000;
+}
